@@ -26,6 +26,14 @@ describe('Uploads a file with certain MIME type', () => {
       filePath: 'test.svg',
       mimeType: 'text/csv',
     },
+    {
+      testFileExt: 'file',
+      filePath: '50MB.file',
+    },
+    {
+      testFileExt: 'file',
+      filePath: '100MB.file',
+    },
   ];
 
   files.forEach(({ testFileExt, filePath, encoding, mimeType }) => {
